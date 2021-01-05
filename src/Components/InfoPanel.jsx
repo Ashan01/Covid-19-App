@@ -43,6 +43,7 @@ export function InfoPanel() {
       }
       getData();
    }, []);
+
    const classes = useStyles();
 
    return (
@@ -53,7 +54,7 @@ export function InfoPanel() {
                   <Grid item xs={4} key={ind}>
                      <Paper className={classes.paper} elevation={3}>
                         <div>
-                           <h3>{val}</h3>
+                           <h3>{val.toUpperCase()}</h3>
                            <h3>{data_1[val].value}</h3>
                         </div>
                      </Paper>
