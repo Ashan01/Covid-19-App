@@ -54,7 +54,7 @@ export const InfoPanel = () => {
                      <Grid item xs key={ind}>
                         <Paper className={classes.paper} elevation={3}>
                            <h3>{obj}</h3>
-                           <h3>{obj}.['value']</h3>
+                           <h3>{data[obj].value}</h3>
                         </Paper>
                      </Grid>
                   );
