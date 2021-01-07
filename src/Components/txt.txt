@@ -1,0 +1,10 @@
+delete json["dailySummary"];
+delete json["dailyTimeSeries"];
+delete json["dailySummary"];
+delete json["image"];
+delete json["countries"];
+delete json["source"];
+delete json["countryDetail"];
+delete json["lastUpdate"];
+
+https://covid19.mathdro.id/api
