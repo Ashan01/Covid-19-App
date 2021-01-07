@@ -1,9 +1,10 @@
 import React from "react";
+import { InfoPanel } from "./Components/infoPanel";
 
 function App() {
    return (
       <div>
-         <h1>Hello World</h1>
+         <InfoPanel />
       </div>
    );
 }
