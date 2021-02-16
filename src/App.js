@@ -1,5 +1,5 @@
 import React from "react";
-import { InfoPanel } from "./Components/infoPanel";
+import { InfoPanel } from "./components/infoPanel";
 
 function App() {
    return (
