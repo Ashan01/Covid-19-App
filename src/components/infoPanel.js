@@ -44,6 +44,10 @@ export const InfoPanel = () => {
       fetchData();
    }, []);
 
+   if (!data.confirmed) {
+      return <h1>Loading....</h1>;
+   }
+
    return (
       <div>
          <NavBar />
@@ -63,7 +67,11 @@ export const InfoPanel = () => {
             </Grid>
          </div>
 
-         <Graph />
+         <Graph
+            confirmed={data.confirmed.value}
+            recovered={data.recovered.value}
+            deaths={data.deaths.value}
+         />
       </div>
    );
 };
