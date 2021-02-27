@@ -63,7 +63,7 @@ export const InfoPanel = () => {
             </Grid>
          </div>
 
-         <Graph data={} />
+         <Graph />
       </div>
    );
 };

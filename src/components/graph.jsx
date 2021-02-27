@@ -2,16 +2,35 @@ import React from "react";
 import { Bar } from "react-chartjs-2";
 
 const data = {
-   labels: ["January", "February", "March", "April", "May", "June", "July"],
+   labels: ["2020"],
+
    datasets: [
       {
-         label: "My First dataset",
+         label: "Confirmed Cases",
          backgroundColor: "rgba(255,99,132,0.2)",
          borderColor: "rgba(255,99,132,1)",
          borderWidth: 1,
          hoverBackgroundColor: "rgba(255,99,132,0.4)",
          hoverBorderColor: "rgba(255,99,132,1)",
-         data: [65, 59, 80, 81, 56, 55, 40],
+         data: [110],
+      },
+      {
+         label: "Recovered Paitent",
+         backgroundColor: "rgba(255,99,132,0.2)",
+         borderColor: "rgba(255,99,132,1)",
+         borderWidth: 1,
+         hoverBackgroundColor: "rgba(255,99,132,0.4)",
+         hoverBorderColor: "rgba(255,99,132,1)",
+         data: [140],
+      },
+      {
+         label: "Deaths",
+         backgroundColor: "rgba(255,99,132,0.2)",
+         borderColor: "rgba(255,99,132,1)",
+         borderWidth: 1,
+         hoverBackgroundColor: "rgba(255,99,132,0.4)",
+         hoverBorderColor: "rgba(255,99,132,1)",
+         data: [100],
       },
    ],
 };
@@ -19,7 +38,7 @@ const data = {
 export default function Graph() {
    return (
       <div>
-         <h2>Bar Example (custom size)</h2>
+         <h2>Crona Cases Chart</h2>
          <Bar
             data={data}
             width={100}
