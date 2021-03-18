@@ -27,13 +27,13 @@ export default function GloablStats() {
             let res = await fetch("https://covid19.mathdro.id/api");
             let jsonData = await res.json();
 
-            // delete jsonData["dailySummary"];
-            // delete jsonData["dailyTimeSeries"];
-            // delete jsonData["image"];
-            // delete jsonData["source"];
-            // delete jsonData["countries"];
-            // delete jsonData["countryDetail"];
-            // delete jsonData["lastUpdate"];
+            delete jsonData["dailySummary"];
+            delete jsonData["dailyTimeSeries"];
+            delete jsonData["image"];
+            delete jsonData["source"];
+            delete jsonData["countries"];
+            delete jsonData["countryDetail"];
+            delete jsonData["lastUpdate"];
 
             setData(jsonData);
          } catch (error) {

@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
       margin: "50px",
    },
    country: {
-      display: "flex",
-      justifyContent: "center",
+      // display: "flex",
+      // justifyContent: "center",
       margin: "20px 0",
    },
    selc: {
@@ -31,6 +31,8 @@ export default function CountryStats() {
 
    let [countryVal, setCountryVal] = useState("AFG");
    let [data, setData] = useState({});
+
+   console.log("data===>", data);
 
    useEffect(() => {
       async function fetchData() {
@@ -51,9 +53,9 @@ export default function CountryStats() {
       fetchData();
    }, []);
 
-   if (!data.confirmed) {
-      return <h1>Loading....</h1>;
-   }
+   // if (!data) {
+   //    return <h1>Loading....</h1>;
+   // }
 
    let { countries } = CountryData;
 
